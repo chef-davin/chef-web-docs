@@ -41,8 +41,16 @@ github.com/habitat-sh/habitat/components/docs-chef-io v0.0.0-20211101172130-6c06
 github.com/habitat-sh/habitat/components/docs-chef-io v0.0.0-20211101172130-6c067fabcc72/go.mod h1:luAy42opPrAM/T6hsqDyW3CNBaAMgy+a6l0+oi8sw8U=
 github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211129234806-2228e743829c h1:YA25pqLVGKSp9ma270W4KSOfukeBpDfreEE1CrAbEak=
 github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211129234806-2228e743829c/go.mod h1:3hkNyL/r/vbh4DUeDDsHnBdI4D0pWJQzwXBgsOZrNAU=
+github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211202233843-d61ca05e65f8 h1:sUUFMKbpkyA07E2EOuU5DW0iMpdWO29TUo7AIMz1Yok=
+github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211202233843-d61ca05e65f8/go.mod h1:3hkNyL/r/vbh4DUeDDsHnBdI4D0pWJQzwXBgsOZrNAU=
+github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211202235606-6daf46b1f3c0 h1:e7LyvBWrpsGZc8yEAdFrm4Y3uIdYF20QXrpmKWJX8J4=
+github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211202235606-6daf46b1f3c0/go.mod h1:3hkNyL/r/vbh4DUeDDsHnBdI4D0pWJQzwXBgsOZrNAU=
 github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211129234835-89f988db8bed h1:SP9YbB60dxV7WktEktHmtrLepchM23j+ZdOmWKDOfCo=
 github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211129234835-89f988db8bed/go.mod h1:N+98qucUAj+gXWL0mbPQQOp9qeEYqzij863T0Ph/wGQ=
+github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211202234031-31a9841135dc h1:iMKnrnEDk2K7muowz68JxVPSc5IRLkEPh5zQ1E+upkM=
+github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211202234031-31a9841135dc/go.mod h1:N+98qucUAj+gXWL0mbPQQOp9qeEYqzij863T0Ph/wGQ=
+github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211202235432-b0e6e6e2acaa h1:2y3CO3xg/r2mMgBPNjAyTxr7/cDV7QXiUlDgtFI2VUM=
+github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211202235432-b0e6e6e2acaa/go.mod h1:N+98qucUAj+gXWL0mbPQQOp9qeEYqzij863T0Ph/wGQ=
 github.com/inspec/inspec-aws/docs-chef-io v0.0.0-20220107215007-d379e6b35b20 h1:heO7ufFQTE4fnYUh5aHV2egyI7rli92OeXEtIXSuvnE=
 github.com/inspec/inspec-aws/docs-chef-io v0.0.0-20220107215007-d379e6b35b20/go.mod h1:5rfIsi1/SqSiAXqU94UOcfMnebnuaEmFriU8k8t1Kes=
 github.com/inspec/inspec-azure/docs-chef-io v0.0.0-20220107214957-9a289bb02261 h1:4GPy46KJtSgpqR3VEGVMkLmlxF6LeAeSS59zaJFtU/o=
