@@ -29,6 +29,10 @@ The following resources work on Windows operating systems.
 
 {{< inspec_resources platform="windows" >}}
 
+## Alibaba Cloud
+
+{{< inspec_resources platform="alicloud" >}}
+
 ## AWS
 
 {{< inspec_resources platform="aws" >}}

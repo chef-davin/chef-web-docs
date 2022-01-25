@@ -1,12 +1,12 @@
 +++
-title = "aws_ec2_transit_gateway_route_table_propagations Resource"
+title = "aws_ec2_vpn_gateway_route_propagations Resource"
 platform = "aws"
 draft = false
 gh_repo = "inspec-aws"
 
 [menu.inspec]
-title = "aws_ec2_transit_gateway_route_table_propagations"
-identifier = "inspec/resources/aws/aws_ec2_transit_gateway_route_table_propagations Resource"
+title = "aws_ec2_vpn_gateway_route_propagations"
+identifier = "inspec/resources/aws/aws_ec2_vpn_gateway_route_propagations Resource"
 parent = "inspec/resources/aws"
 +++
 
@@ -19,9 +19,9 @@ parent = "inspec/resources/aws"
 </div>
 
 
-Use the `aws_ec2_transit_gateway_route_table_propagations` InSpec audit resource to test if virtual private gateways can propagate routes to multiple AWS EC2 route tables.
+Use the `aws_ec2_vpn_gateway_route_propagations` InSpec audit resource to test if virtual private gateways can propagate routes to multiple AWS EC2 route tables.
 
-The `AWS::EC2::TransitGatewayRouteTablePropagation` resource enables a virtual private gateway (VGW) to propagate routes to the specified route table of a VPC.
+The `AWS::EC2::VPNGatewayRoutePropagation` resource enables a virtual private gateway (VGW) to propagate routes to the specified route table of a VPC.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS EC2 VPNGatewayRoutePropagation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html).
 

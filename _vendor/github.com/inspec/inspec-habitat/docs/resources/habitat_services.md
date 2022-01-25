@@ -1,7 +1,6 @@
 +++
 title = "habitat_services resource"
 draft = false
-gh_repo = "inspec"
 platform = "habitat"
 
 [menu]
@@ -10,6 +9,8 @@ platform = "habitat"
     identifier = "inspec/resources/habitat/habitat_services.md habitat_services resource"
     parent = "inspec/resources/habitat"
 +++
+
+[\[edit on GitHub\]](https://github.com/inspec/inspec-habitat/blob/master/docs/resources/habitat_services.md)
 
 Use the `habitat_service` (singular) InSpec audit resource to perform in-depth auditing of a single service.
 

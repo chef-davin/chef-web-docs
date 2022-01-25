@@ -6,6 +6,9 @@
       {{ if eq .Params.platform $platform }}
         <li>
           <a href="{{ .RelPermalink }}">{{.Title}}</a>
+          {{- with .Params.title_append }}
+            <i>{{.}}</i>
+          {{- end -}}
         </li>
       {{ end }}
     {{ end }}

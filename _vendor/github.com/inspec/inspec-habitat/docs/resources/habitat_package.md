@@ -1,7 +1,6 @@
 +++
 title = "habitat_package resource"
 draft = false
-gh_repo = "inspec"
 platform = "habitat"
 
 [menu]
@@ -10,6 +9,8 @@ platform = "habitat"
     identifier = "inspec/resources/habitat/habitat_package.md habitat_package resource"
     parent = "inspec/resources/habitat"
 +++
+
+[\[edit on GitHub\]](https://github.com/inspec/inspec-habitat/blob/master/docs/resources/habitat_package.md)
 
 Use the `habitat_package` InSpec audit resource to test properties of a single Habitat package.
 

@@ -139,7 +139,6 @@
   source = "static"
   target = "static"
 
-
 [[imports.mounts]]
   source = "assets"
   target = "assets"
@@ -155,7 +154,7 @@
   source = "content"
   target = "content"
 
-## InSpec Azure and AWS Cloud Resources
+## InSpec Azure, AliCloud, Habitat and AWS Cloud Resources
 
 [[imports]]
   disable = false
@@ -170,6 +169,10 @@
   source = "layouts"
   target = "layouts"
 
+[[imports.mounts]]
+  source = "assets"
+  target = "assets"
+
 [[imports]]
   disable = false
   ignoreConfig = false
@@ -182,6 +185,32 @@
 [[imports.mounts]]
   source = "layouts"
   target = "layouts"
+
+[[imports.mounts]]
+  source = "assets"
+  target = "assets"
+
+[[imports]]
+  disable = false
+  ignoreConfig = false
+  path = "github.com/ianmadd/inspec-alicloud/docs-chef-io"
+
+[[imports.mounts]]
+  source = "content"
+  target = "content"
+
+[[imports.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[imports]]
+  disable = false
+  ignoreConfig = false
+  path = "github.com/inspec/inspec-habitat/docs"
+
+[[imports.mounts]]
+  source = "resources"
+  target = "content/inspec/resources"
 
 ## Module mounts for packages added with NPM
 

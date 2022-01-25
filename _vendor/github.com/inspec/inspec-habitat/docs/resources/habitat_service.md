@@ -1,7 +1,6 @@
 +++
 title = "habitat_service resource"
 draft = false
-gh_repo = "inspec"
 platform = "habitat"
 
 [menu]
@@ -10,6 +9,8 @@ platform = "habitat"
     identifier = "inspec/resources/habitat/habitat_service.md habitat_service resource"
     parent = "inspec/resources/habitat"
 +++
+
+[\[edit on GitHub\]](https://github.com/inspec/inspec-habitat/blob/master/docs/resources/habitat_service.md)
 
 Use the `habitat_service` InSpec audit resource to test properties of a single Habitat service.
 
@@ -89,9 +90,11 @@ end
 Required string. The name (unique within the namespace of the origin) of the package that provides the service.
 
 ```ruby
+
 describe habitat_service(origin: 'core', name: 'httpd') do
   it { should exist }
 end
+
 ```
 
 ## Properties

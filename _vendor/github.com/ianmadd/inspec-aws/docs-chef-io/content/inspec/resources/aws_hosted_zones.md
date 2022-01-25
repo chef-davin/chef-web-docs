@@ -19,7 +19,11 @@ parent = "inspec/resources/aws"
 </div>
 
 
-Use the `aws_hosted_zones` resource to test the hosted zones configuration.
+Use the `aws_hosted_zones` InSpec audit resource to test the properties of multiple AWS Route53 hosted zones.
+
+The `AWS::Route53::HostedZone` creates a new public or private hosted zone.
+
+For additional information, including details on parameters and properties, see the [AWS documentation on the `AWS::Route53::HostedZone` resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html).
 
 ## Installation
 
@@ -27,11 +31,13 @@ Use the `aws_hosted_zones` resource to test the hosted zones configuration.
 
 ## Syntax
 
-````
-    describe aws_hosted_zones do
-      its('names') { should include ("carry-on.films.com") }
-    end
-````    
+Ensure the hosted zones are available
+
+```ruby
+describe aws_hosted_zones do
+  it { should exist }
+end
+```
 
 ## Parameters
 
@@ -39,43 +45,86 @@ This resource does not require any parameters.
 
 ## Properties
 
-`name`
-: The name of the hosted zone.
+`ids`
+: The ID that Amazon Route 53 assigned to the hosted zone when you created it.
 
-`id`
-: It's id.
+: **Field**: `id`
+
+`names`
+: The name of the domain.
+
+: **Field**: `name`
+
+`caller_references`
+: The value that you specified for CallerReference when you created the hosted zone.
+
+: **Field**: `caller_reference`
+
+`configs`
+: A complex type that includes the Comment and PrivateZone elements.
+
+: **Field**: `config`
+
+`resource_record_set_counts`
+: The number of resource record sets in the hosted zone.
+
+: **Field**: `resource_record_set_count`
+
+`linked_services`
+: If the hosted zone was created by another service, the service that created the hosted zone.
+
+: **Field**: `linked_service`
 
 ## Examples
 
+**Ensure that there are more than one hosted zone.**
 
-**Ensure a specific hosted zone exists.**
+```ruby
+describe aws_hosted_zones do
+  its('count') { should >= 1 }
+end
+```
 
-````
-    describe aws_hosted_zones do
-      its('names') { should include ("carry-on.films.com") }
-    end
-````
+**Ensure a hosted zone is available.**
+
+```ruby
+describe aws_hosted_zones do
+  its('ids') { should include 'HOSTED_ZONE_ID' }
+end
+```
+
+**Ensure a hosted zone name is available.**
+
+```ruby
+describe aws_hosted_zones do
+    its('names') { should include 'HOSTED_ZONE_NAME' }
+end
+```
 
 ## Matchers
 
-This InSpec audit resource uses the following special matcher. For a full list of available matchers, please visit our [matchers page](https://www.inspec.io/docs/reference/matchers/).
+This InSpec audit resource has the following special matchers. For a full list of available matchers, please visit our [Universal Matchers page](https://www.inspec.io/docs/reference/matchers/).
 
-### should
+The controls will pass if the `list` method returns at least one result.
 
-The control will pass if the describe passes all tests.
+### exist
 
-Use `should` to validate if a specific hosted zone exists
+Use `should` to test that the entity exists.
 
-````
-    describe aws_hosted_zones do
-      its('names') { should include ("carry-on.films.com") }
-    end
+```ruby
+describe aws_hosted_zones do
+  it { should exist }
+end
+```
 
-````
+Use `should_not` to test the entity does not exist.
+
+```ruby
+describe aws_hosted_zones do
+  it { should_not exist }
+end
+```
 
 ## AWS Permissions
 
 {{% aws_permissions_principal action="Route53:Client:ListHostedZonesResponse" %}}
-
-You can find detailed documentation at [Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/r53-api-permissions-ref.html)
-
