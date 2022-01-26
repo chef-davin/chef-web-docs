@@ -32,8 +32,6 @@ Unless defined, `azure_cloud` global endpoint, and default values for the HTTP c
 For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/main/README.md).
 For api related info : [`Azure pipeline Docs`](https://docs.microsoft.com/en-us/rest/api/datafactory/pipelines/list-by-factory).
 
-### Availability
-
 ## Installation
 
 {{% inspec_azure_install %}}

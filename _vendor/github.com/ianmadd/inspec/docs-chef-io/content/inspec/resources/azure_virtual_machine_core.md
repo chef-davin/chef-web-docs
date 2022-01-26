@@ -1,6 +1,6 @@
 +++
 title = "azure_virtual_machine resource"
-title_append = "inspec-core resource"
+title_append = "(inspec-core)"
 draft = false
 gh_repo = "inspec"
 platform = "azure"

@@ -21,8 +21,6 @@ parent = "inspec/resources/azure"
 
 Use the `azure_generic_resources` Inspec audit resource to test any valid Azure resources. 
 
-### Availability
-
 ## Installation
 
 {{% inspec_azure_install %}}

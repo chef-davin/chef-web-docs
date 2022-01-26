@@ -663,7 +663,7 @@ identifier = "inspec"
     weight = 20
 
     [[inspec]]
-    title = "Alibaba Cloud Resources"
+    title = "Alibaba Resources"
     identifier = "inspec/resources/alicloud"
     parent = "inspec/resources"
     weight = 25

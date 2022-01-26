@@ -31,7 +31,7 @@ The following resources work on Windows operating systems.
 
 {{< inspec_resources platform="windows" >}}
 
-## Alibaba Cloud
+## Alibaba
 
 {{< inspec_resources platform="alicloud" >}}
 

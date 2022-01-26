@@ -31,8 +31,6 @@ For more information, refer to [`azure_generic_resource`]({{< relref "azure_gene
 Unless defined, `azure_cloud` global endpoint, and default values for the HTTP client will be used.
 For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/main/README.md).
 
-### Availability
-
 ## Installation
 
 {{% inspec_azure_install %}}

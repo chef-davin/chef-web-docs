@@ -5,10 +5,10 @@
     {{ if hasPrefix .RelPermalink "/inspec/resources"}}
       {{ if eq .Params.platform $platform }}
         <li class="inspec-resource">
-          <a href="{{ .RelPermalink }}">{{.Title}}</a>
-          {{ with .Params.title_append }}
-            <p><i>{{.}}</i></p>
-          {{- end -}}
+          <a href="{{ .RelPermalink }}">{{.Title}}
+          {{- with .Params.title_append }}
+            {{.}}
+          {{- end -}}</a>
         </li>
       {{ end }}
     {{ end }}

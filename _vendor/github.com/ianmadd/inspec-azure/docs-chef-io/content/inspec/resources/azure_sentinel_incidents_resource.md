@@ -33,8 +33,6 @@ For more information, refer to the resource pack [README](https://github.com/ins
 For api related info : [`Azure Azure Sentinel incident  Docs`](https://docs.microsoft.com/en-us/rest/api/securityinsights/incidents/get).
 
 
-### Availability
-
 ## Installation
 
 {{% inspec_azure_install %}}
