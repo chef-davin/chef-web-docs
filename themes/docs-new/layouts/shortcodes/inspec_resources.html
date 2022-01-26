@@ -1,13 +1,13 @@
 {{ $platform := (.Get "platform")}}
-<ul>
+<ul class="inspec-resources-list">
   {{ range $index, $element := (where site.RegularPages "Section" "eq" "inspec") }}
 
     {{ if hasPrefix .RelPermalink "/inspec/resources"}}
       {{ if eq .Params.platform $platform }}
-        <li>
+        <li class="inspec-resource">
           <a href="{{ .RelPermalink }}">{{.Title}}</a>
-          {{- with .Params.title_append }}
-            <i>{{.}}</i>
+          {{ with .Params.title_append }}
+            <p><i>{{.}}</i></p>
           {{- end -}}
         </li>
       {{ end }}

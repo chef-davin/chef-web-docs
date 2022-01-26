@@ -16,7 +16,7 @@ require (
 	github.com/ianmadd/inspec-alicloud/docs-chef-io v0.0.0-20220125194914-b04341904a71 // indirect
 	github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20220125195023-1ca4a577b210 // indirect
 	github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20220125195109-d2ea81a19dc8 // indirect
-	github.com/ianmadd/inspec/docs-chef-io v0.0.0-20220125200346-ab69ebd0f2c3 // indirect
+	github.com/ianmadd/inspec/docs-chef-io v0.0.0-20220126192712-31b8e799e820 // indirect
 	github.com/inspec/inspec-aws/docs-chef-io v0.0.0-20220125074040-a36918cc640c // indirect
 	github.com/inspec/inspec-azure/docs-chef-io v0.0.0-20220124161024-2f4d33e29b97 // indirect
 	github.com/inspec/inspec-habitat/docs v0.0.0-20211028155101-71a766962b68 // indirect

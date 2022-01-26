@@ -13,6 +13,8 @@ gh_repo = "inspec"
 
 The following list of InSpec resources are available.
 
+{{< inspec_resources_filter >}}
+
 ## OS
 
 {{< inspec_resources platform="os" >}}
